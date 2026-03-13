@@ -1,0 +1,7 @@
+{
+  "input_file": "test.txt",
+  "bart_model": "bart_chat_model_retrained/final",
+  "flan_model": "flan_t5_small_model_retrained_v2/final",
+  "bart_summary": "Chat keeps repeating LULP like a running joke and mostly reacts with laughter instead of taking it seriously.",
+  "flan_summary": "Chat keeps repeating The GOD GAMER like a running joke and mostly reacts with laughter instead of taking it seriously. Most of chat is just piling onto the joke."
+}

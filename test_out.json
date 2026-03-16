@@ -1,0 +1,82 @@
+{
+  "in": "test.txt",
+  "out": "test_out.json",
+  "ts": 1773627936,
+  "dev": "cpu",
+  "cfg": {
+    "clean": true,
+    "prompt_lines": 220,
+    "few_k": 3,
+    "pool_lim": 0,
+    "ex_lines": 30,
+    "or_max_tok": 96,
+    "or_temp": 0.2,
+    "max_src": 1024,
+    "max_tgt": 64,
+    "beams": 4,
+    "no_rep_n": 3,
+    "len_pen": 1.0,
+    "max_out_sents": 2,
+    "sample_msgs": 200,
+    "sample_seed": null
+  },
+  "clean_stats": {
+    "in_lines": 200,
+    "out_lines": 161,
+    "rm_sys": 4,
+    "dup_lines": 35,
+    "dup_groups": 5,
+    "flood_runs": 5,
+    "rm_noise": 0,
+    "trunc_lines": 0
+  },
+  "meta": {
+    "zero": {
+      "mdl": "deepseek/deepseek-v3.2",
+      "use": {
+        "prompt_tokens": 1510,
+        "completion_tokens": 44,
+        "total_tokens": 1554,
+        "cost": 0.00042379,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00042379,
+          "upstream_inference_prompt_cost": 0.00040619,
+          "upstream_inference_completions_cost": 1.76e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "ms": 2957.7,
+      "skip": false
+    },
+    "few": {},
+    "bart": {
+      "model_id": "JDMates/TwitchBART",
+      "chunks": 2,
+      "latency_ms": 2125.0
+    },
+    "flan": {
+      "model_id": "JDMates/TwitchFlanSmall-v2",
+      "chunks": 2,
+      "latency_ms": 1429.3
+    },
+    "errs": {
+      "zero": null,
+      "few": "OpenRouter HTTP error 402: {\"error\":{\"message\":\"Prompt tokens limit exceeded: 5200 > 3343. To increase, visit https://openrouter.ai/settings/credits and add more credits\",\"code\":402,\"metadata\":{\"provider_name\":null}},\"user_id\":\"user_2x4mfaY815F7pq4whVcczLXgzqe\"}"
+    },
+    "raw_n": 68049,
+    "samp_n": 200,
+    "win_start": 25593,
+    "win_end": 25793
+  }
+}
